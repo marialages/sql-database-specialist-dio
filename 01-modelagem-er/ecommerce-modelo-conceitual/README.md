@@ -21,7 +21,7 @@ conceitual de um e-commerce, com modelo lógico e script MySQL.
 
 ## 🗺️ Diagrama
 
-![Modelo ER do e-commerce](modelo-ecommerce.png)
+![Modelo ER do e-commerce](Ecommerce_refinado.png)
 
 ## 🧩 Entidades
 
