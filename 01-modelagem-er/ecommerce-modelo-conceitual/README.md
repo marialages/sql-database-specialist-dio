@@ -1,7 +1,7 @@
 # 🛒 Refinando um Projeto Conceitual de Banco de Dados – E-commerce
 
 Projeto da formação **SQL Database Specialist (DIO)**: refinamento do modelo
-conceitual de um e-commerce, com modelo lógico e script MySQL.
+conceitual de um e-commerce, desenvolvido no MySQL Workbench.
 
 ## 📌 Narrativa
 
@@ -48,15 +48,16 @@ conceitual de um e-commerce, com modelo lógico e script MySQL.
 
 ## 💡 Decisões de modelagem
 
-- **CPF ou CNPJ:** o cliente tem um tipo (PF/PJ) e só um dos dois documentos é preenchido.
-- **Entrega separada do pedido:** o status da entrega é independente do status do pedido (inclusive cancelamento).
-- **Carência de devolução:** calculada a partir da data de entrega.
-- **Preço no pedido:** o valor unitário é guardado na relação produto/pedido para preservar o preço da compra.
+- **CPF ou CNPJ:** o cliente possui os dois campos, e apenas o aplicável ao seu perfil (pessoa física ou jurídica) é preenchido.
+- **Entrega separada do pedido:** o status da entrega (`Entrega`) é independente do status do pedido (`Pedido.Status pedido`), que registra inclusive o cancelamento.
+- **Carência de devolução:** pode ser calculada a partir de `Entrega.Data de Entrega`.
+- **Fornecedor:** cada produto possui um único fornecedor (FK em `Produto`).
+- **Pagamento:** um pedido pode ter mais de um pagamento (`Metodo de Pagamento`).
 
-## ▶️ Como executar
+## 📁 Arquivos
 
-1. Instale o MySQL e o MySQL Workbench.
-2. Abra o arquivo `ecommerce.mwb` no Workbench para ver o modelo, ou execute `ecommerce.sql` para criar as tabelas.
+- `Ecommerce_refinado.png`: diagrama do modelo (MySQL Workbench)
 
 ## 🛠️ Tecnologias
+
 MySQL · MySQL Workbench
