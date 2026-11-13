@@ -8,7 +8,7 @@ da DIO: modelagem de dados, SQL (DDL/DML), MySQL avançado e transações.
 | Módulo | Atividade | Status |
 |---|---|---|
 | 01 Modelagem ER | [E-commerce – modelo conceitual](01-modelagem-er/ecommerce-modelo-conceitual) | ✅ Concluída |
-| 01 Modelagem ER | Esquema conceitual para banco de dados | ⬜ Pendente |
+| 01 Modelagem ER | [Esquema conceitual – Oficina mecânica](01-modelagem-er/oficina-esquema-conceitual) | ✅ Concluída |
 | 02 SQL | Primeiro projeto lógico de banco de dados | ⬜ Pendente |
 | 02 SQL | Projeto lógico do zero | ⬜ Pendente |
 | 03 MySQL avançado | Índices e procedures | ⬜ Pendente |
